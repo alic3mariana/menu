@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+}
+@font-face {
+    font-family: "Retro Gaming";
+    src: url(./conhecetevermelho/paginaOrgao/assets/css/Retro\ Gaming.ttf);
+}
+#logo {
+    font-family: "Retro Gaming";
+    font-weight: 300;
+    font-size: 5vh;
+    color: green;
+    margin: 0; 
+    
+}
+
+.header {
+    background-color: black;
+    padding: 2vw;
+    text-align: center;
+}
+
+canvas {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.azul {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px; 
+}
+
+.azul a {
+    display: flex;
+    width: 25vh; 
+    height: 25vh;
+    background-image: url('azul.png');
+    background-size: cover; 
+    cursor: pointer; 
+    text-indent: -9999px; 
+    animation: floatAnimation 2s infinite alternate ease-in-out;
+}
+
+.vermelho {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px; 
+}
+.vermelho a {
+    display: flex;
+    width: 25vh; 
+    height: 25vh; 
+    background-image: url('vermelha.png'); 
+    background-size: cover; 
+    cursor: pointer; 
+    text-indent: -9999px; 
+    animation: floatAnimation 2s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
